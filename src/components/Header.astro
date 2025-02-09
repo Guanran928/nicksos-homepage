@@ -3,7 +3,6 @@ import { Icon } from 'astro-icon/components';
 import { getEntry } from 'astro:content';
 
 import Container from '@/components/layout/Container.astro';
-import InlineSVG from '@/components/util/InlineSVG.astro';
 import Link from '@/components/util/Link.astro';
 
 const headerMenu = await getEntry('menus', 'header');
@@ -27,16 +26,12 @@ const navbarItemActiveStyle = `border-b-nix-blue-light bg-nix-blue-light text-wh
         href="/"
         class="flex select-none items-center justify-between gap-2 md:justify-start"
       >
-        <InlineSVG
+        <img
           class="h-12 w-auto"
-          src="/src/assets/image/nixos-logo-notext.svg"
-          alt="Nixos Logo"
+          src="/src/assets/image/avatar.png"
+          alt="Nick's OS Logo"
         />
-        <InlineSVG
-          class="block h-12 w-auto md:hidden xl:block"
-          src="/src/assets/image/nixos-logo-text.svg"
-          alt="Nixos Logo Text"
-        />
+        <p>Nick's</p>
       </Link>
 
       <button

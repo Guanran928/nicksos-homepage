@@ -11,7 +11,7 @@ sections:
         link: https://reproducible.nixos.org/
       - name: Security
         link: /community/teams/security
-      - name: Summer of Nix
+      - name: Nick's Summer
         link: https://github.com/ngi-nix/summer-of-nix
   - name: Get in Touch
     items:
